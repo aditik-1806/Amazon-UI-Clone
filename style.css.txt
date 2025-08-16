@@ -1,0 +1,201 @@
+/* Reset default margin, padding, and set box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header background and padding */
+header {
+  background-color: #131921;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Navigation container as flex */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left side (logo + location) */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Amazon logo */
+.nav-logo img {
+  width: 100px;
+  object-fit: contain;
+}
+
+/* Location text styles */
+.location {
+  cursor: pointer;
+}
+
+.top-text {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.location-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bottom-text {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Center search bar */
+.nav-center {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.search-dropdown {
+  padding: 6px 8px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-box {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-icon {
+  background-color: #febd69;
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right side navigation items */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Language selector */
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+
+.language-option select {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Account options */
+.account-option {
+  text-align: left;
+}
+
+.account-option .top-text {
+  font-size: 12px;
+  color: #ccc;
+  margin-bottom: 2px;
+}
+
+.select-account {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Orders */
+.order-option {
+  text-align: left;
+}
+
+.order-option .top-text {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.order-option .bottom-text {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Cart option */
+.cart-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+/* Cart icon */
+.cart-logo i {
+  font-size: 24px;
+}
+
+/* Navigation options bar */
+.nav-options {
+  background-color: #232f3e;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+/* "All" menu */
+.all-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.all-logo i {
+  font-size: 20px;
+}
+
+/* Other nav options */
+.options p {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.options p:hover,
+.all-logo:hover {
+  text-decoration: underline;
+}
